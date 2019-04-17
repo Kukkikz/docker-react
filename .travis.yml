@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t Kukkikz/docker-react -f Dockerfile.dev .
+  - docker build -t kukkikz/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run Kukkikz/docker-react npm run test -- --coverage
+  - docker run kukkikz/docker-react npm run test -- --coverage
